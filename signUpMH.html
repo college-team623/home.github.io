@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="CSS/Main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+    </head>
+    <body id="bodySignUpMH">
+        <section class="containerSignUpMH">
+            <h1>Welcome!</h1>
+            <p class="sing">Sign up to continue</p>
+            <form method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Type your name" name="Name" required>
+                </div>
+                <div>
+                    <label for="mail">E-Mail</label>
+                    <input id="mail" type="email" placeholder="Type your email" name="E-mail" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" name="Password" required>
+                </div>
+                <div>
+                    <label for="repeatPassword">Repeat password</label>
+                    <span id="eyeMH" onclick="appearSignUPMH()"><i class="fa-regular fa-eye-slash"></i></span>
+                    <input onkeyup="validatePasswordMH()" type="password" id="repeatPassword" placeholder="Repeat your password" name="RepeatPassword" required>
+                </div>
+                <span id="checkPassMH"></span>
+                <div class="submit">
+                    <input id="submit" class="submitInput" type="submit" value="sign up">
+                </div>
+            </form>
+            <footer class="signUpFooterMH">
+                <p>Already have an account? <a href="loginMH.html">login</a></p>
+                <div class="labels">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </footer>
+        </section>
+        <script src="JS/whole.js"></script>
+    </body>
+</html>

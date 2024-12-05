@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign In</title>
+        <link rel="stylesheet" href="CSS/Main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+    </head>
+    <body id="bodySignInMH">
+        <section class="containerSignIpMH">
+            <div class="loginImgMH">
+                <img src="img/loginMH.png" alt="Setting Girl">
+            </div>
+            <h1 class="singIpMH">Sign In</h1>
+            <form method="post">
+                <div>
+                    <label for="mail">E-Mail</label>
+                    <input id="mail" type="email" placeholder="Type your email" name="E-mail" required>
+                </div>
+                <div>
+                    <label for="user">User-Name</label>
+                    <input id="user" type="text" placeholder="Type your user-name" name="user" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" name="Password" required>
+                </div>
+                <div class="checkBoxMH">
+                    <input type="checkbox" id="rememberMeMH">
+                    <label for="rememberMeMH">Remember Me</label>
+                </div>
+                <div class="submit">
+                    <input id="submit" class="submitInput" type="submit" value="sign in">
+                </div>
+            </form>
+            <footer class="signIpFooterMH">
+                <div class="labels">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </footer>
+        </section>
+        <script src="JS/whole.js"></script>
+    </body>
+</html>
