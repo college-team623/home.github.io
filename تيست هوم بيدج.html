@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dashboard</title>
+    <style>
+        @font-face {
+            font-family: main;
+            src: url(../fonts/Exo_2/static/Exo2-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: thinn;
+            src: url(../fonts/Exo_2/static/Exo2-LightItalic.ttf);
+        }
+
+        @font-face {
+            font-family: arabic;
+            src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
+        }
+
+        body {
+            font-family: 'main', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EEEEEE;
+            color: #293f50;
+        }
+
+        .header {
+            background-color: #293f50;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #EEEEEE;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-family: thinn;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .navbar {
+            background-color: #293f50;
+            padding: 10px 15px;
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;}
+
+        .navbar a {
+            color: #293f50;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #EEEEEE;
+            border-radius: 20px;
+            font-size: 14px;
+            white-space: nowrap;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #648880;
+            color: #EEEEEE;
+        }
+
+        .dashboard {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(to right, #293f50, #293f60);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #eff1f2;
+            font-family: arabic;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #293f50;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: #080808;
+            font-family: main;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:nth-child(odd) {
+            background-color: #648880;
+        }
+
+        .card:nth-child(even) {
+            background-color: #a1d3b0;
+        }
+
+        .footer {
+            background-color: #20313e;
+            color: #EEEEEE;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #a1d3b0;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FCAIH - Modern Portal</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/HU-Logo-EN.png/800px-HU-Logo-EN.png" alt="University Logo">
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+        <a href="#">Feedback</a>
+    </div>
+
+    <div class="dashboard">
+        <div class="welcome">مرحبًا بك، عبدالرحمن بدوي محمد يوسف</div>
+        <div class="grid">
+            <a href="#" class="card">Register Courses</a>
+            <a href="#" class="card">Term Results</a>
+            <a href="#" class="card">Edit Profile</a>
+            <a href="#" class="card">Time Table</a>
+            <a href="#" class="card">Transcript in Arabic</a>
+            <a href="#" class="card">Transcript in English</a>
+            <a href="#" class="card">Final Exams Timetable</a>
+            <a href="#" class="card">Published Courses</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 FCAIH - All Rights Reserved.
+    </div>
+</body>
+</html>
